@@ -1,0 +1,15 @@
+# docker run \
+# -it \
+# -v ~/ros-chat-app:/rca-vol \
+# ros:noetic-ros-core
+
+services:
+  rcapp:
+    image: customros:noetic-ros-core-cpp
+    working_dir: /rca-vol
+    volumes:
+      - /mnt/d/manas-taskphase/ros-chat-app:/rca-vol
+    stdin_open: true # docker run -i
+    tty: true # -t
+
+# Run this compose with docker compose run --rm rcapp

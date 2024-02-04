@@ -1,0 +1,4 @@
+<launch>
+  <node name="node1" pkg="comm" type="service_node" output="screen"/>
+  <node name="node2" pkg="comm" type="service_node" output="screen" launch-prefix="xterm -e"/>
+</launch>

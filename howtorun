@@ -1,0 +1,4 @@
+docker exec -it <container id> bash
+source devel/setup.bash
+rosrun comm node1 __name:=node1
+rosrun comm node2 __name:=node2
